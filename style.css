@@ -1,0 +1,500 @@
+  /* Styling for banner header */
+
+
+
+  .st-banner-heading-cl {
+    width: 340px;
+    color: #ff681d;
+    position: absolute;
+    left: 100px;
+    font-family: anton !important;
+    font-size: 53px !important;
+    line-height: 65px !important;
+}
+
+
+.bs-strategy-col-cl ul li h3 {
+    position: relative;
+    display: inline-block;
+    padding-left: 40px;
+    font-size: 40px;
+    font-family: anton !important;
+    line-height: 33px;
+    color: #000;
+}
+
+.bs-strategy-col-cl ul li {
+    list-style: none;
+}
+
+.bs-strategy-col-cl ul li p {
+    font-size: 16px;
+    font-family: oswald !important;
+    color: #666;
+    margin-left: 40px;
+}
+
+.bs-strategy-col-cl ul li h3:before {
+    content: "";
+    position: absolute;
+    left: 36px;
+    top: -4px;
+    width: 24px;
+    height: 20px;
+    background-color: #fc0;
+    z-index: -1;
+}
+
+/* brand section */
+
+.ln-b-cl {
+    background: #ffc800;
+    color: #fff;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 79%);
+    position: absolute;
+    padding: 1rem;
+    left: 105px;
+    width: 400px;
+    height: 700px;
+    top: -148px;
+  
+}
+
+.ln-b-cl .heading {
+    font-family: anton !important;
+    font-size: 96px;
+    color: #fff;
+    padding: 2rem;
+}
+
+
+.brand-req {
+    align-items: end;
+    display: flex;
+    justify-content: end;
+}
+
+
+.brand-req .req-btn {
+    font-family: oswald !important;
+    background: none;
+    border: none;
+    color: gray !important;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+
+.brand-req .cont-btn {
+    font-family: oswald !important;
+    color: #fff;
+    font-size: 22px;
+    background: #ffc800;
+    border-radius: 0;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+
+
+/* visual-identity-sec */
+
+
+.sc-2-fn-dsc {
+    justify-content: center;
+    display: flex;
+    width: 80% !important;
+}
+
+.sc-2-fn-dsc p {
+    font-family: anton !important;
+      
+        letter-spacing: .1em;
+        font-size: 61px;
+       
+        width: 400px;
+        text-align: left;
+        color: #fff;
+}
+
+.mn-sc-dt-info{
+
+    background-color: #000;
+}
+  .visual-identity {
+    font-size: 6rem;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+  }
+  .visual-identity-column .description {
+    font-size: 1.6rem;
+    margin-top: 20px;
+    color: white;
+  }
+  .project-number {
+    background-color: #ffc700;
+    padding: 5px 10px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 350px;
+    border-radius: 177px 23px 180px 164px;
+    color: #fff;
+
+  }
+
+  .project-number p{
+
+    margin-top: 31px;
+
+  }
+
+  .dash-line {
+    border-bottom: 2px dashed #ffc700;
+    display: inline-block;
+    width: 100px;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-top: 250px;
+  }
+  .project-number-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .project-image {
+    width: 100%;
+  }
+  .visual-identity-column {
+    width: 600px;
+  }
+  .visual-identity-img-column {
+    justify-content: center;
+    display: flex;
+  }
+  .visual-identity-img-column img {
+   
+    justify-content: center;
+    display: flex;
+  }
+
+  .brand-personality-section .container{
+    /* padding:100px; */
+    
+  }
+  .brand-personality-heading {
+    font-size: 7rem;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+  }
+  .brand-personality-desc {
+    color: #fff;
+    font-weight: bold;
+  }
+  .bar-container {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .bar-label {
+    flex: 1;
+    color: #fff;
+  }
+  .progress {
+    width: 100px;
+    height: 20px;
+    border-radius: 10px!important;
+    overflow: hidden;
+    margin: 0 10px;
+  }
+  .progress-bar {
+    border-radius: 0;
+  }
+  .progress-bar-left {
+    background-color: #ff6600;
+  }
+  .progress-bar-right {
+    background-color: white;
+  }
+  .web-title {
+    justify-content: end;
+    display: flex;
+    font-size: 4rem;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-size: 7rem;
+  }
+  .web-description {
+    font-size: 23px;
+    color: #fff;
+    justify-content: end;
+    display: flex;
+  }
+
+ 
+
+
+
+  @media screen and (max-width: 767px) {
+    .main-content {
+      display: grid;
+    }
+    .banner h1 {
+      text-align: center;
+    }
+    .heading-right {
+      background: black;
+      color: #fff;
+      margin-top: 190px;
+    }
+    .heading-right h4 {
+      font-size: 30px;
+    }
+    .heading-left {
+      font-size: 41px;
+      top: -5rem;
+    }
+    .bar-container {
+      width: -webkit-fill-available;
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .brand-personality-heading {
+      font-size: 36px;
+    }
+    .progress {
+      width: 60%;
+    }
+    .web-title {
+      font-size: 2rem;
+      justify-content: flex-start;
+    }
+
+    .st-banner-heading-cl {
+        position: unset;
+    }
+    .ln-b-cl {
+        position: unset;
+    }
+
+
+    .visual-identity-img-column img {
+    
+        width: 200px;
+    }
+    .visual-identity-column {
+        width: 100%;
+    }
+
+    .let-us-hp-rw-cl .l-us-hp-cl {
+
+    position: unset;
+    }
+    .l-us-h-dsc {
+    width: 100%!important;
+    }
+    .dashed-line {
+       
+        height: 200px;
+        left: 88% !important;
+        
+    }
+
+    .project-tag {
+        left: 0%!important;
+
+    }
+    .pr-tg-ln-col-cl {
+        justify-content: end!important;
+        align-items: baseline!important;
+    }
+    .design-col-cl{
+        justify-content: center;
+        display: flex;
+
+    }
+    .brand-req{
+        margin-top: 2rem!important;
+        margin-bottom: 2rem!important;
+    }
+
+    .sc-2-fn-dsc {
+        width:100%!important;
+
+
+  }
+
+.sc-2-fn-dsc p {
+   
+    letter-spacing: normal;
+}
+.project-number {
+   
+    margin-top: 330px;
+}
+.lt-us-hp-h-col{
+    justify-content: center; 
+     display: flex;
+}
+}
+
+@media (min-width: 767px) and (max-width: 990px) {
+
+  .heading-left {
+    padding: 1rem;
+    top: -13rem;
+    padding-bottom: 3rem;
+  }
+  .heading-right h4 {
+    font-size: 30px;
+  }
+  .dash-line {
+    width: 20px;
+  }
+  .bar-container {
+    width: auto;
+  }
+  .progress {
+    width: 70%;
+  }
+  
+    .st-banner-heading-cl {
+        position: unset;
+    }
+    .ln-b-cl {
+        position: unset;
+    }
+
+
+    .visual-identity-img-column img {
+    
+        width: 200px;
+    }
+    .visual-identity-column {
+        width: 100%;
+    }
+
+    .let-us-hp-rw-cl .l-us-hp-cl {
+
+    position: unset;
+    }
+    .l-us-h-dsc {
+    width: 100%!important;
+    }
+    .dashed-line {
+       
+        height: 200px!important;
+        
+    }
+
+    .brand-personality-heading {
+        font-size: 5rem;
+    }
+
+    .web-title {
+        font-size: 5rem;
+        justify-content: center;
+      }
+
+   
+    .pr-tg-ln-col-cl {
+        justify-content: end!important;
+        align-items: baseline!important;
+    }
+    .design-col-cl{
+        justify-content: center;
+        display: flex;
+
+    }
+    .brand-req{
+        margin-top: 2rem!important;
+        margin-bottom: 2rem!important;
+    }
+
+    .sc-2-fn-dsc {
+        width:100%!important;
+
+
+  }
+
+.sc-2-fn-dsc p {
+   
+    letter-spacing: normal;
+    width:100%!important;
+}
+.project-number {
+   
+    margin-top: 330px;
+}
+
+.let-us-hp-rw-cl{
+display: flex!important;
+flex-direction: column;
+}
+
+.lt-us-hp-h-col{
+    justify-content: center; 
+     display: flex;
+     max-width: 100%!important;
+}
+.lt-us-hp-con-col{
+    max-width: 100%!important;
+}
+.pr-tg-ln-col-cl{
+    max-width: 100%!important;
+
+}
+
+}
+
+
+
+@media (min-width: 990px) and (max-width: 1400px) {
+    .sc-2-fn-dsc p {
+        width: 0;
+    }
+    .ln-b-cl {
+        width: 350px;
+}
+
+.visual-identity-column {
+    width: 100%;
+
+}
+.project-image {
+    width: 59%;
+}
+.project-tag {
+  
+    top: 13px;
+    left: 40%!important;
+
+}
+.dashed-line {
+
+    left: 130%!important;
+    height: 500px!important;
+
+}
+
+.l-us-hp-cl {
+    background: #ffc800;
+   
+    left: 38px!important;
+    width: 300px!important;
+    height: 600px!important;
+}
+
+.l-us-hp-cl .heading {
+
+    font-size: 80px!important;
+}
+
+.l-us-h-dsc {
+     width:100%!important;
+    }
+}

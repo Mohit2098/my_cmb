@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="https://db.onlinewebfonts.com/c/066ce24dae3730ed6c648b09efaea93a?family=Acumin+Variable+Concept" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    >
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    >
+
+    <style>
+          .profile-section {
+              display: flex;
+              align-items: center;
+              margin-bottom: 30px;
+              margin-top: 6rem;
+          }
+
+          .profile-image img {
+              border-radius: 50%;
+              width: 350px;
+              height: 350px;
+              object-fit: cover;
+              margin-right: 20px;
+          }
+
+          .profile-info {
+              max-width: 80%;
+          }
+
+          .profile-info h2 {
+
+            font-family: 'Saira Semi Condensed', sans-serif !important;
+            font-weight: 600;
+          font-size: 70px;
+          margin-bottom: 1rem;
+
+          }
+
+
+          .profile-info .pro-position {
+              font-family: "Roboto Condensed", sans-serif !important;
+              font-size: 27px;
+              background-color: #fbbd08;
+              color: white;
+              padding: 5px 10px;
+              display: inline-block;
+              margin-bottom: 15px;
+
+              font-weight: 600;
+          }
+
+          .profile-info p {
+
+              line-height: 1.3;
+              font-family: "Saira Semi Condensed", sans-serif !important;
+              font-weight: 600;
+              font-size: 19px;
+          }
+
+          .education-section {
+
+              margin-top: 6rem;
+          }
+
+          .education-section .section-title {
+              position: relative;
+              display: inline-block;
+              font-size: 40px;
+              font-family: "anton"!important;
+              line-height: 33px;
+              color: #000;
+              margin-bottom: 5rem;
+          }
+
+          .education-section .section-title::before{
+
+              content: "";
+              width: 30px;
+              height: 30px;
+              background-color: #fbbd08;
+              margin-right: 10px;
+              position: absolute;
+              top: -19px;
+              left: -17px;
+              right: 0px;
+              z-index: -1;
+          }
+
+          .section-item {
+              font-size: 26px;
+              margin-bottom: 20px;
+              position: relative;
+              padding-left: 35px;
+        
+              font-family: "Saira Semi Condensed", sans-serif !important;
+              font-weight: 600;
+          }
+
+          .section-item::before {
+              content: "";
+              background: #fbbd08;
+              position: absolute;
+              left: 2px;
+               top: 21px;
+               height: 15px;
+               width: 15px;
+          }
+
+          .line-connector {
+              position: absolute;
+              width: 2px;
+              background-color: #fbbd08;
+              left: 9px;
+              top: 20px;
+              z-index: -1;
+              bottom: -41px;
+          }
+
+          .education-section .section-item:first-child .line-connector,
+          .awards-section .section-item:first-child .line-connector {
+              top: 30px;
+          }
+
+          .education-section .section-item:last-child .line-connector,
+          .awards-section .section-item:last-child .line-connector {
+              bottom: 41px;
+          }
+
+          .pro-line{
+          width: 400px;
+          border: 3px solid #FF681D;;
+          opacity: 1;
+          }
+          .awards-section{
+              margin-top: 5rem;
+          }
+
+
+          .awards-section .section-title{
+              margin-bottom: 5rem;
+              position: relative;
+              display: inline-block;
+              font-size: 40px;
+              font-family: "anton" !important;
+              line-height: 33px;
+              color: #000;
+          }
+
+          .awards-section .section-title::before{
+
+              content: "";
+              width: 30px;
+              height: 30px;
+              background-color: #fbbd08;
+              margin-right: 10px;
+              position: absolute;
+              top: -16px;
+              left: -18px;
+              right: 0px;
+              z-index: -1;
+          }
+
+
+          .world-mp-sec{
+
+              margin-top: 5rem;
+          }
+
+
+          .world-mp-sec .container{
+            max-width: 1400px;
+
+
+          }
+          .world-mp-sec .section-title{
+            margin-bottom: 5rem;
+            position: relative;
+            display: inline-block;
+            font-size: 70px;
+            font-family: "anton" !important;
+            line-height: 82px;
+            color: #FF671D;
+          }
+
+          .world-mp-sec .section-title::before{
+            content: "";
+            width: 30px;
+            height: 30px;
+            background-color: #fbbd08;
+            margin-right: 10px;
+            position: absolute;
+            top: -4px;
+            left: -12px;
+            right: 0px;
+            z-index: -1;
+
+          }
+
+
+
+
+          /* why Section */
+           .why-us-section {
+            margin: 50px 0;
+            }
+
+          /* Title Section */
+          .why-us-title {
+            font-family: "anton"!important;
+              font-size: 70px;
+              margin-bottom: 30px;
+              position: relative;
+              display: flex;
+              align-items: center;
+              white-space: nowrap;
+          }
+
+          .why-us-title::before {
+              content: "";
+              width: 30px;
+              height: 30px;
+              background-color: #fbbd08;
+              margin-right: 10px;
+              position: absolute;
+              top: -3px;
+              left: -18px;
+              right: 0px;
+              z-index: -1;
+          }
+
+          .why-us-title::after {
+              content: "";
+              height: 4px;
+              width: 100%;
+              background-color: #FF681D;
+              margin-left: 10px;
+              margin-top: 3rem;
+          }
+
+          .why-us-sc-cont{
+            max-width: 1400px;
+            margin-right: 20px;
+
+
+          }
+
+          .why-us-hd-icon-dv{
+            background-color: #fc0;
+            padding: 30px;
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 79%);
+            width: 300px;
+            height: 280px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+          
+        }
+        .why-us-hd-icon-dv img{
+            height: 150px;
+        }
+
+        .why-us-tt-hd-col-cl{
+            align-items: center;
+            display: flex;
+        }
+
+        .why-us-tt-hd-dv h3{
+        font-size: 70px;
+        font-family: anton !important;
+        line-height: 33px;
+        color: #1d1d1d;
+        }
+
+        .why-us-dv-dsc p{
+            font-size: 20px;
+            font-family: oswald !important;
+            color: #1d1d1d;
+            padding-top: 3rem;
+        }
+        .why-us-cn-rw-cl{
+            margin-top: 5rem;
+        }
+
+
+        .bk-str-custom-line {
+            border-top: 5px solid #ff6600;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .bk-str-btn-custom {
+            background-color: #ff6600;
+            text-transform: uppercase;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn-custom:hover {
+            background-color: #e65c00;
+        }
+
+        .why-us-bk-str-ss-rw-cl{
+            margin-top: 5rem; 
+            
+        }
+
+        .bk-str-btn-a{
+            color: white;
+            padding: 2rem;
+            font-size: 60px;
+            font-family: Anton, sans-serif !important;
+            text-decoration: none;
+        }
+
+        .profile-img-dv {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-img-dv img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .profile-img-dv::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #333; /* Border color */
+            border-radius: 50%;
+            z-index: 3;
+        }
+
+        .ed-dt-bx-cl {
+            border: 2px solid #FF671D;; /* Border color */
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            height: 100%;
+        }
+
+        .awrd-rc-bx-cl{
+            height: 100%;
+            border: 2px solid #FF671D;; /* Border color */
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .ed-title {
+            font-family: 'Anton';
+            font-size: 50px;
+            margin-bottom: 1rem;
+            width: 100%;
+            padding-left: 2rem;
+            position: relative;
+            color: #000000;
+          
+        }
+        .awrd-rc-title{
+            font-family: 'Anton';
+            font-size: 50px;
+            margin-bottom: 1rem;
+            width: 100%;
+            padding-left: 2rem;
+            position: relative;
+            color: #000000;
+        }
+
+        .ed-title::before {
+            content: '';
+            position: absolute;
+            left: 21px;
+            top: -5px;
+            width: 30px;
+            height: 30px;
+            background-color: #ffcc00;
+            z-index: -1;
+        }
+
+        .awrd-rc-title::before{
+           content: '';
+            position: absolute;
+            left: 21px;
+            top: -5px;
+            width: 30px;
+            height: 30px;
+            background-color: #ffcc00;
+            z-index: -1;
+        }
+
+        .ed-cnt-cl ul li{
+            list-style: none;
+            font-size: 18px;
+            font-family: oswald !important;
+            color: #000000;
+            margin-bottom: 1rem;
+            width: 300px;
+        }
+
+        .aw-rc-cnt-cl ul li{
+            list-style: none;
+            font-size: 18px;
+            font-family: oswald !important;
+            color: #000000;
+            margin-bottom: 1rem;
+            width: 300px;
+
+
+        }
+
+        .ed-aw-mn-rw-cl{
+            margin-top: 5rem;
+        }
+
+
+
+    </style>
+  </head>
+
+  <body>
+
+
+    <section class="world-mp-sec">
+        <div class="container global-team-section">
+          <div class="global-team-title">
+            <h3 class="section-title">global team of strategic experts and execution specialists</h3>
+          </div>
+  
+          <!-- World Map Section -->
+          <div class="world-map">
+            <img src="world-map.png" alt="World Map" class="img-fluid">
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="why-us-section">
+        <div class="container why-us-sc-cont">
+          <!-- Title Section -->
+          <div class="why-us-title">Why us?</div>
+          <div class="row why-us-cn-rw-cl">
+            <div class="col-md-3 why-hd-mn-col-cl">
+               <div class="why-us-hd-icon-dv">
+                <img src="whi-1.png" alt="">
+               </div>
+            </div>
+            <div class="col-md-8 why-us-tt-hd-col-cl">
+               <div class="why-us-tt-hd-dv">
+                  <h3>Pattern Recognition</h3>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+                <div class="why-us-dv-dsc">
+                    <p>
+                        We excel at identifying key trends and patterns that others may overlook. 
+                        Our keen analytical skills allow us to pinpoint opportunities and challenges, ensuring your business strategy is both innovative and informed.
+                    </p>
+                </div>
+            </div>
+         </div>
+          
+
+
+
+         <div class="row why-us-cn-rw-cl">
+            <div class="col-md-3 why-hd-mn-col-cl">
+               <div class="why-us-hd-icon-dv">
+                <img src="wh-2.png" alt="">
+               </div>
+            </div>
+            <div class="col-md-8 why-us-tt-hd-col-cl">
+               <div class="why-us-tt-hd-dv">
+                  <h3>Deeper Thinking</h3>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+                <div class="why-us-dv-dsc">
+                    <p>
+                        Our team delves beyond the surface to provide profound insights and comprehensive strategies. 
+                        We take the time to thoroughly understand your business, delivering solutions that address the root causes of your challenges.
+                    </p>
+                </div>
+            </div>
+         </div>
+          
+
+
+
+         <div class="row why-us-cn-rw-cl">
+            <div class="col-md-3 why-hd-mn-col-cl">
+               <div class="why-us-hd-icon-dv">
+                <img src="wh3.png" alt="">
+               </div>
+            </div>
+            <div class="col-md-8 why-us-tt-hd-col-cl">
+               <div class="why-us-tt-hd-dv">
+                  <h3>Active Listening</h3>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+                <div class="why-us-dv-dsc">
+                    <p>
+                        We prioritize understanding your unique needs and goals.
+                         By actively listening to your concerns and aspirations, we tailor our approach to align perfectly with your vision, ensuring a collaborative and personalized strategy.
+                    </p>
+                </div>
+            </div>
+         </div>
+          
+
+
+
+
+         <div class="row why-us-cn-rw-cl">
+            <div class="col-md-3 why-hd-mn-col-cl">
+               <div class="why-us-hd-icon-dv">
+                <img src="wh4.png" alt="">
+               </div>
+            </div>
+            <div class="col-md-8 why-us-tt-hd-col-cl">
+               <div class="why-us-tt-hd-dv">
+                  <h3>Procedural Execution</h3>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+                <div class="why-us-dv-dsc">
+                    <p>
+                        Our commitment to precision and detail guarantees flawless execution of your strategies.
+                        We develop clear, actionable plans and follow through meticulously, driving your business toward its objectives with disciplined execution.
+                    </p>
+                </div>
+            </div>
+         </div>
+          
+
+
+         <div class="row why-us-cn-rw-cl">
+            <div class="col-md-3 why-hd-mn-col-cl">
+               <div class="why-us-hd-icon-dv">
+                <img src="wh5.png" alt="">
+               </div>
+            </div>
+            <div class="col-md-8 why-us-tt-hd-col-cl">
+               <div class="why-us-tt-hd-dv">
+                  <h3>Proven Track Record</h3>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+                <div class="why-us-dv-dsc">
+                    <p>
+                        With a history of successful collaborations and client satisfaction, our proven track record speaks for itself. 
+                        We consistently deliver bottom-line results, helping businesses secure investments, achieve growth, and realize their full potential.
+                    </p>
+                </div>
+            </div>
+         </div>
+
+<div class="row why-us-bk-str-ss-rw-cl">
+    <div class="col-md-6">
+        <div class="bk-str-custom-line"></div>
+    </div>
+
+    <div class="col-md-6">
+        
+        <div class="bk-str-btn-custom">
+        <a href="#" class="bk-str-btn-a">Book a Strategy Session</a>
+    </div>
+    </div>
+</div>
+       
+       
+    </div>
+
+          
+        </div>
+      </section>
+
+
+      <section class="profile-section">
+        <div class="container">
+          <div class="row profile-rw-cl">
+            <div class="col-md-8 profile-con-col-cl">
+                <div class="profile-info">
+                  <h2>Tapasya Bali</h2>
+                  <div class="pro-position">Managing Partner</div>
+                  <hr class="pro-line">
+                  <p>
+                    Tapasya is a seasoned expert with 25 years in investment banking and venture finance. As a two-time
+                    founder and operator of high-growth health and wellness consumer brands, she excels in bridging the gap
+                    between finance and storytelling. Her unique approach consistently drives bottom-line results for
+                    companies.
+                  </p>
+                </div>
+              </div>
+            <div class="col-md-4 profile-img-cl">
+                <div class=" profile-img-dv">
+                    <img src="1234.png" alt="Person Image">
+                </div>
+              </div>
+            </div>
+
+
+                <div class="row ed-aw-mn-rw-cl">
+                    <div class="col-md-6">
+                        <div class="ed-dt-bx-cl">
+                            <div class="ed-tt-dv">
+                                <h2 class="ed-title">Education:</h2>
+                            </div>
+                          
+                            <div class="ed-cnt-cl">
+                                <ul class="mt-3">
+                                    <li>Bachelors of Arts in English Literature
+                                    Delhi University, India</li>
+                                    <li>Master's in Business Information Systems
+                                    Baruch College, New York</li>
+                                    <li>Master's in Business Administration
+                                    NYU Stern School of Business, New York</li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="awrd-rc-bx-cl">
+                            <h2 class="awrd-rc-title">Awards & Recognition:</h2>
+
+                            <div class="aw-rc-cnt-cl">
+                            <ul class="mt-3">
+                                <li>Goldman Sachs' 100 Most Intriguing Entrepreneurs of 2015</li>
+                                <li>BizJournal's Upstart 100 List 2016</li>
+                                <li>Remodista Women2Watch in Retail Disruption Innovation Award Recipient 2016</li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+          
+          </div>
+        </div>
+      </section>
+
+
+
+      
+
+
+  
+
+
+
+ 

@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <style>
+
+      
+
+
+.product-image {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.product-image img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  border: 1px solid #fff;
+}
+
+/* Black overlay on hover */
+.product-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); 
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.product-image:hover::before {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Style for Check Out button */
+.btn-pdp-check {
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  color: #fff;
+  background: #c85531;
+  font-size: 17px;
+  font-family: Inter;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.product-image:hover .btn-pdp-check {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
+
+
+        .case-stdy-bn-sec {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .case-stdy-bn-sec  .case-study-container {
+            max-width: 100%!important;
+            margin: 0 auto;
+            padding: 5rem 5rem 1px 5rem;
+            text-align: left;
+            position: relative;
+        }
+
+        .case-study-header {
+            font-size: 100px;
+            font-family: "Anton", sans-serif;
+            color: #FF671D;
+            margin-bottom: 20px;
+        }
+
+        .case-study-subtitle {
+            -webkit-text-stroke: 1px #fff;
+            -webkit-text-fill-color: transparent;
+            font-size: 70px;
+            font-weight: 100;
+            width: 800px;
+            font-family: "Anton", sans-serif;
+            text-transform: lowercase;
+            margin-bottom: 100px;
+        }
+
+        .case-study-details .cs-dt-txt {
+            font-size: 30px;
+            margin: 4rem;
+            font-family: oswald !important;
+            text-transform: lowercase;
+        }
+
+        .cs-dt-highlighted-text {
+            color: #FF6B00;
+            font-weight: bold;
+        }
+
+        .cs-sty-intr p {
+            font-size: 60px;
+            font-family: "Anton", sans-serif;
+            color: #FFFF;
+            margin-bottom: 20px;
+        }
+
+
+        .project-badge {
+            background-color: #FFCC00;
+            color: #000;
+            font-weight: bold;
+            padding: 15px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            position: absolute;
+            right: 0;
+            top: 150px;
+            display: inline-block;
+        }
+
+        .project-number {
+            display: block;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .dashed-border {
+            border-left: 2px dashed #FFCC00;
+            padding-left: 20px;
+        }
+
+        .cs-pr-intro {
+            font-size: 60px;
+            font-family: "Anton", sans-serif;
+            color: #FFC600;
+            margin: 4rem;
+        }
+
+        .cs-at-intr .container {
+
+            max-width: 1400px;
+            margin: 0;
+        }
+
+        .smb-project-tag {
+            float: right;
+            background-color: #ffc400;
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 50% 50% 50% 0;
+            position: relative;
+            top: -46px;
+            left: -160px;
+            width: 180px;
+            height: 180px;
+            transform: rotate(174deg);
+        }
+
+        .smb-dashed-line {
+            position: relative;
+    width: 2px;
+    height: 470px;
+    border-left: 8px dashed #f7a600;
+    transform: translate(-50%);
+    z-index: 1;
+    top: -52px;
+    display: flex;
+    left: 196px;
+    float: right;
+        }
+
+        .smb-project-title {
+            transform: rotate(212deg);
+            position: absolute;
+            left: 21px;
+            top: 40px;
+        }
+
+        .smb-dashed-line-l-r {
+            border-bottom: 8px dashed #f7a600;
+            width: 180px;
+            position: absolute;
+            margin-top: -4rem;
+            right: 70px;
+        }
+
+        .cs-mn-int-pr {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Section 2 */
+
+        .challenge-section {
+            background-color: #eee;
+            padding: 40px;
+            border: 1px solid #ccc;
+            position: relative;
+           
+            margin: 0 auto;
+        }
+
+        .challenge-title {
+            font-size: 50px;
+            font-family: anton !important;
+            color: #000000;
+            position: relative;
+            z-index: 1;
+        }
+
+        .challenge-title::before {
+            content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #FFCC00;
+    position: absolute;
+    left: -23px;
+    top: 0px;
+    z-index: -1;
+        }
+
+        .challenge-title::after {
+            content: "";
+            display: inline-block;
+            width: 100px;
+            height: 4px;
+            background-color: #FF681D;
+            position: absolute;
+            left: 200px;
+            top: 30px;
+        }
+
+        .challenge-text {
+            font-size: 30px;
+            margin: 4rem;
+            font-family: oswald !important;
+            color: #000000;
+        }
+/* section 3 */
+.strategy-btn {
+        background-color: #FFCC00;
+        font-weight: bold;
+        padding: 15px 25px;
+        text-align: center;
+        text-transform: uppercase;
+        border: none;
+        color: #fff;
+        font-family: oswald !important;
+        font-size: 26px;
+        }
+
+        .strategy-btn:hover {
+            background-color: #ffb700;
+            color: #000;
+        }
+
+        .underline-yellow {
+            border-top: 4px solid #FFCC00;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+    .process-section {
+      margin: 50px auto;
+      text-align: left;
+    }
+
+    .process-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #FF6B00;
+      margin-bottom: 20px;
+    }
+
+    .step-circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #FF6B00;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+   .cs-pr-step-text{
+    font-size: 40px;
+    font-family: oswald !important;
+    color: #000000;
+   }
+
+    .cs-pr-description-text {
+        font-size: 23px;
+    font-family: oswald !important;
+    color: #000000;
+}
+
+
+    .mood-board-image {
+      width: 100%;
+      margin-top: 30px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .step-circle-icon img{
+        height:200px;
+    }
+
+    .process-sec-cl{
+
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+
+    }
+    .process-sec-cl .row{
+        align-items: center!important;
+    }
+    .result-section {
+            background-color: #eee;
+            padding: 40px;
+            border: 1px solid #ccc;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .result-title {
+            font-size: 50px;
+            font-family: anton !important;
+            color: #000000;
+            position: relative;
+            z-index: 1;
+        }
+
+        .result-title::before {
+            content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #FFCC00;
+    position: absolute;
+    left: -23px;
+    top: 0px;
+    z-index: -1;
+        }
+
+        .result-title::after {
+            content: "";
+            display: inline-block;
+            width: 100px;
+            height: 4px;
+            background-color: #FF681D;
+            position: absolute;
+            left: 130px;
+            top: 30px;
+        }
+
+        .result-text {
+            font-size: 30px;
+            margin: 4rem;
+            font-family: oswald !important;
+            color: #000000;
+        }
+        .cs-sr-result-img img{
+            width: 100%;
+        }
+
+        .strategy-btn {
+        background-color: #FFCC00;
+        font-weight: bold;
+        padding: 15px 25px;
+        text-align: center;
+        text-transform: uppercase;
+        border: none;
+        color: #fff;
+        font-family: oswald !important;
+        font-size: 26px;
+        }
+
+        .ls-sec-btn-cl:hover {
+            background-color: #ffb700;
+            color: #000;
+        }
+
+        .cs-ls-sec-yl-line {
+            border-top: 4px solid #FFCC00;
+            width: 100%;
+        }
+
+        .cs-ls-sec-btn-cl{
+       background-color: #FFCC00;
+       font-weight: bold;
+       padding: 15px 25px;
+       text-align: center;
+       text-transform: uppercase;
+       border: none;
+       color: #fff;
+       font-family: oswald !important;
+       font-size: 26px;
+       width: 100%;
+        }
+        @media screen and (max-width: 767px) {
+            .case-study-subtitle {
+                width: 100%;
+            }
+        
+
+
+        
+        }
+
+    </style>
+</head>
+
+<body>
+
+   <section class="case-stdy-bn-sec">
+        <div class="container case-study-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="case-study-header">case study 1</h1>
+                    <h2 class="case-study-subtitle">retail store to e-commerce:<br> evolving the brand experience</h2>
+                </div>
+            </div>
+            
+            <div class="case-stdy-dsc">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="cs-mn-int-pr">
+                            <div class="cs-sty-intr">
+                                <p>Who: </p>
+        
+                            </div>
+                         
+                        </div>
+
+                        <div class="cs-at-intr">
+                            <div class="container">
+        
+                                <div class="cs-pr-dv">
+                                    <span class="cs-pr-intro">Lindora Nutrition</span><br>
+                                </div>
+                                <div class="case-study-details">
+                                    <div class="cs-dt-txt">
+                                        A well-established chain of <span class="cs-dt-highlighted-text">physical weight-loss
+                                            clinics</span>, renowned for its personalized approach to health and nutrition.
+        
+                                    </div>
+                                    </p>
+                                </div>
+                            </div>
+                        
+                        </div>
+        
+                    </div>
+                    <div class="col-md-4">
+                        <div class="smb-project-tag-container">
+                            <div class="smb-project-tag">
+                                <span class="smb-project-title">
+    
+                                    PROJECT #539
+                                </span>
+    
+                            </div>
+    
+                            <div class="smb-l-r-dsh">
+                                <span class="smb-dashed-line-l-r">
+    
+                                </span>
+    
+                            </div>
+                            <div class="smb-tp-btm-dsh">
+                                <div class="smb-dashed-line">
+            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+               
+             
+
+              
+
+             
+            </div>
+
+        </div>
+        </div>
+        </div>
+
+
+    </section>
+
+    <!-- challenge sec -->
+
+    <section class="challenge-section">
+        <div class="container">
+            <h2 class="challenge-title">Challenge</h2>
+            <div class="challenge-text">
+                <p>Lindora Nutrition needed to extend its personalized in-clinic weight loss experience to an online
+                    platform.</p>
+                <p>The goal was to offer health products and meal plans with the same level of customization and
+                    engagement as their physical locations, reaching a broader health-focused audience.</p>
+            </div>
+
+          
+        </div>
+        </div>
+     
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="underline-yellow"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="strategy-btn">Book a Strategy Session</button>
+                        </div>
+                    
+                </div>
+            </div>
+              <div class="container process-section">
+                            <h2 class="process-title">Process:</h2>
+                            <div class="process-sec-cl">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                    <div class="step-circle-icon">
+                                    <img src="l-1.png" alt="">
+                                    </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                    <h3 class="cs-pr-step-text">Developing Customer Personas</h3>
+                                    <p class="cs-pr-description-text">
+                                        Conducted in-depth research to understand and develop detailed customer personas for a new health-focused audience.
+                                    </p>
+                                    </div>
+                                </div>
+                            
+                                <div class="row mt-4">
+                                    <div class="col-12">
+                                    <img src="l-mn-1.png" alt="Mood Board and Brand Guide" class="mood-board-image">
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="process-sec-cl">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                    <div class="step-circle-icon">
+                                    <img src="l-1.png" alt="">
+                                    </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                    <h3 class="cs-pr-step-text">Developing Customer Personas</h3>
+                                    <p class="cs-pr-description-text">
+                                        Conducted in-depth research to understand and develop detailed customer personas for a new health-focused audience.
+                                    </p>
+                                    </div>
+                                </div>
+                            
+                                <div class="row mt-4">
+                                    <div class="col-12">
+                                    <img src="l-mn-1.png" alt="Mood Board and Brand Guide" class="mood-board-image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="process-sec-cl">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                    <div class="step-circle-icon">
+                                    <img src="l-1.png" alt="">
+                                    </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                    <h3 class="cs-pr-step-text">Developing Customer Personas</h3>
+                                    <p class="cs-pr-description-text">
+                                        Conducted in-depth research to understand and develop detailed customer personas for a new health-focused audience.
+                                    </p>
+                                    </div>
+                                </div>
+                            
+                                <div class="row mt-4">
+                                    <div class="col-12">
+                                    <img src="l-mn-1.png" alt="Mood Board and Brand Guide" class="mood-board-image">
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="process-sec-cl">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                    <div class="step-circle-icon">
+                                    <img src="l-1.png" alt="">
+                                    </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                    <h3 class="cs-pr-step-text">Developing Customer Personas</h3>
+                                    <p class="cs-pr-description-text">
+                                        Conducted in-depth research to understand and develop detailed customer personas for a new health-focused audience.
+                                    </p>
+                                    </div>
+                                </div>
+                            
+                                <div class="row mt-4">
+                                    <div class="col-12">
+                                    <img src="l-mn-1.png" alt="Mood Board and Brand Guide" class="mood-board-image">
+                                    </div>
+                                </div>
+                            </div> 
+              
+        </div>
+        
+        </section>
+
+
+ 
+        <section class="result-section">
+            <div class="container">
+                <h2 class="result-title">Result</h2>
+                <div class="result-text">
+                    <p>Lindora Nutrition needed to extend its personalized in-clinic weight loss experience to an online
+                        platform.</p>
+                    <p>The goal was to offer health products and meal plans with the same level of customization and
+                        engagement as their physical locations, reaching a broader health-focused audience.</p>
+                </div>
+    
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="cs-sr-result-img">
+                            <img src="res-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+            
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="cs-ls-sec-yl-line"></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="cs-ls-sec-cn-btn">
+                                    <button class="cs-ls-sec-btn-cl">CONTACT US</button>
+                                </div>
+                              
+                            </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+
+            </body>
+            </html>
+
+
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zigzag Timeline</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: white;
+}
+
+.container {
+  padding: 50px 0;
+}
+
+.timeline {
+  position: relative;
+}
+
+.step {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.step-circle {
+  background-color: #ff6b01;
+  color: white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.step-content {
+  padding-left: 20px;
+}
+
+.step-content h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.step-content p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.line {
+  height: 150px;
+  width: 4px;
+  background-color: yellow;
+  position: relative;
+}
+
+.row .order-md-1 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="timeline">
+      <!-- Step 01 -->
+      <div class="step">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-right">
+            <div class="step-circle">Step 01</div>
+          </div>
+          <div class="col-md-1">
+            <div class="line"></div>
+          </div>
+          <div class="col-md-7">
+            <div class="step-content">
+              <h3>The Mission</h3>
+              <p>Uncover the Brand DNA by aligning the brand’s core values with the primary intentions of its core customers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 02 -->
+      <div class="step">
+        <div class="row align-items-center">
+          <div class="col-md-7 text-right order-md-1 order-2">
+            <div class="step-content">
+              <h3>Brand Narrative</h3>
+              <p>Create a captivating brand narrative that connects your "why" with why your customers should trust.</p>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <div class="line"></div>
+          </div>
+          <div class="col-md-4 order-md-2 order-1">
+            <div class="step-circle">Step 02</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 03 -->
+      <div class="step">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-right">
+            <div class="step-circle">Step 03</div>
+          </div>
+          <div class="col-md-1">
+            <div class="line"></div>
+          </div>
+          <div class="col-md-7">
+            <div class="step-content">
+              <h3>Proto Personas</h3>
+              <p>Identify the perfect customer persona, confirm assumptions through market research and data analysis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 04 -->
+      <div class="step">
+        <div class="row align-items-center">
+          <div class="col-md-7 text-right order-md-1 order-2">
+            <div class="step-content">
+              <h3>Brand Matrix</h3>
+              <p>Create a Brand Matrix that aligns brand beliefs with both functional and emotional benefits.</p>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <div class="line"></div>
+          </div>
+          <div class="col-md-4 order-md-2 order-1">
+            <div class="step-circle">Step 04</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 05 -->
+      <div class="step">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-right">
+            <div class="step-circle">Step 05</div>
+          </div>
+          <div class="col-md-1">
+            <div class="line"></div>
+          </div>
+          <div class="col-md-7">
+            <div class="step-content">
+              <h3>Customer Journey</h3>
+              <p>Develop customer journeys and tailor the content matrix to craft tailored messages for increased engagement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
